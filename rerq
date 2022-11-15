@@ -1,0 +1,15 @@
+public void getStudents(int deptID) {
+		
+		
+		string output = " ";
+		for(Department d : departments) {
+			
+			if(d.deptID == deptID) {
+				
+				for(Student s : d.students) {
+					
+					output+= "Students in"+d.title+"department \n";
+					output+= s.name+" "+
+					         s.stuID+" "+
+							 s.surname+"\n";
+					
